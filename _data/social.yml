@@ -129,7 +129,8 @@ ello:
 blogger:
   name: Blogger
   icon: icon-blogger
-  prepend: "https://www.blogger.com/profile/"
+  prepend: "https://"
+  append: ".tistory.com"
 tumblr:
   name: Tumblr
   icon: icon-tumblr

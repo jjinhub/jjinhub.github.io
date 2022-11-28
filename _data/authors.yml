@@ -25,10 +25,12 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    linkedin:        daein-lee-3b6ba9139
-    github:          lazyren
-    stackoverflow:   4294737
-    email:           lazy0ren@gmail.com
+    blogger:         khj05592002
+    github:          jjinhub
+    instagram:       h__jiinn
+    # linkedin:        daein-lee-3b6ba9139
+    # stackoverflow:   4294737
+    # email:           lazy0ren@gmail.com
     # rss:             https://lazyren.github.io/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -39,7 +41,6 @@ author1:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       <username>
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -57,7 +58,6 @@ author1:
     # hackernews:      <username>
     # trello:          <firstnamelastname>
     # xing:            <firstname_lastname_counter>
-    # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
