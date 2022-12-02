@@ -2,7 +2,7 @@
 layout: post
 title: "Hydejack Post Writing Tips & Tricks"
 subtitle: "Hydejack Post Writing Tips & Tricks"
-category: devlog
+category: Programming
 tags: blog
 ---
 
