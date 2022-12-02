@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Study Log
-slug: studylog
+title: Development
+slug: development
 sidebar: true
 order: 3
 description: >
-  Log study results
+  About development tips
 ---
