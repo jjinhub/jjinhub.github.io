@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Dev. Log
-slug: devlog
+title: Programming
+slug: Programming
 sidebar: true
 order: 2
 description: >
-  Anything about development
+  About programming skills
 ---
