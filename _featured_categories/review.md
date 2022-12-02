@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Review
-slug: review
+slug: review1
 sidebar: true
 order: 4
 description: >
