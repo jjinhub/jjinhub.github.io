@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Review
-slug: review
+title: Study
+slug: study
 sidebar: true
 order: 4
 description: >
-  Reviews on hardware/software
+  Records of Studying Big data and Coding
 ---

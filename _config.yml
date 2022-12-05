@@ -480,5 +480,5 @@ jekyll_compose:
 feed:
   categories:
     - Programming
-    - review
-    - studylog
+    - Development
+    - Study
