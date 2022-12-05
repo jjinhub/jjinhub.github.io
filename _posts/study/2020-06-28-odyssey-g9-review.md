@@ -2,7 +2,7 @@
 layout:   post
 title:    "49인치 32:9 모니터 오디세이 G9 리뷰(feat. Magic Borderless & PowerToys)"
 subtitle: "49인치 32:9 모니터 오디세이 G9 리뷰(feat. Magic Borderless & PowerToys)"
-category: review
+category: study
 tags:     hardware software
 image:
   path:   /assets/img/2020-06-28/g9.jpg
