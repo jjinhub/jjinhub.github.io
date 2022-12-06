@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: Algorithm
-slug: algorithm
+title: Kaggle
+slug: kaggle
 category: study
 sidebar: true
-order: 1
+order: 3
 description: >
-   Algorithm Study
+   Kaggle Study
 ---

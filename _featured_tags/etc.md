@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: Algorithm
-slug: algorithm
+title: Etc
+slug: etc
 category: study
 sidebar: true
-order: 1
+order: 5
 description: >
-   Algorithm Study
+   Other BigData Study
 ---

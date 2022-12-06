@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: Algorithm
-slug: algorithm
+title: Backjoon
+slug: backjoon
 category: study
 sidebar: true
-order: 1
+order: 2
 description: >
-   Algorithm Study
+   Backjoon Algorithm Study
 ---
