@@ -78,7 +78,7 @@ copyright:             © 2023. All rights reserved.
 
 # Format of the permalinks
 # permalink:             /blog/:categories/:year-:month-:day-:title/
-permalink              none
+permalink:              none
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
