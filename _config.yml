@@ -93,6 +93,7 @@ accent_image:
   background:          center / cover url(/assets/img/background.png)
   overlay:             false
 accent_color:          rgb(0,174,239)
+apple_touch_icon: /assets/img/logo.png
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
