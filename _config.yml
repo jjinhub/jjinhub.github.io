@@ -56,8 +56,8 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             Blog
-    url:               /blog/
+  - title:             Programming
+    url:               /_featured_categories/
   - title:             Projects
     url:               /projects/
   - title:             Résumé*
