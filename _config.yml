@@ -17,46 +17,51 @@ url:                   https://jjinhub.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 아무튼 코딩
+
+timezone:              Asia/Seoul
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Let's Work Hard to Achieve Our Goals.
+  Growing Data Scientist.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               >
+  Coding With Me:)
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              ["Machine Learning", "Deep Learning", "Python", "Big Data", "AI"]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/profile.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
-  # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+  name:                HyunJin Kim
+  email:               khj05592002@gmail.com
+  picture:             /assets/img/profile.png
+  social:
+    github:            jjinhub
+    email:             khj05592002@gmail.com
 
 # Add links to the sidebar.
-menu:
-  - title:             Blog
-    url:               /blog/
-  - title:             Projects
-    url:               /projects/
-  - title:             Résumé*
-    url:               /resume/
-  - title:             Documentation
-    url:               /docs/
+# menu:
+#   - title:             Blog
+#     url:               /blog/
+#   - title:             Projects
+#     url:               /projects/
+#   - title:             Résumé*
+#     url:               /resume/
+#   - title:             Documentation
+#     url:               /docs/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -69,71 +74,74 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2023. All rights reserved.
 
 # Format of the permalinks
-permalink:             /blog/:categories/:year-:month-:day-:title/
+# permalink:             /blog/:categories/:year-:month-:day-:title/
+permalink:              none
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /blog/:num/
-
+paginate_path:         /page-:num/
+excerpt_separator:     <!--more-->
 
 # Theme
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+# remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          rgb(79,177,186)
+accent_image:
+  background:          center / cover url(/assets/img/background.jpg)
+  overlay:             false
+accent_color:          rgb(0,174,239)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
+theme_color:           rgb(31,55,75)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+google_fonts:          Noto+Sans+KR|JetBrains+Mono|Nanum+Gothic+Coding
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+font:                  Noto Sans KR, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading:          Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
-font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+font_code:             JetBrains Mono, Nanum Gothic Coding, Menlo, Monaco, Consolas, monospace;
 
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
-  - scope:
-      path:            hyde/
-    values:
-      accent_color:    rgb(38,139,210)
-      theme_color:     rgb(32,32,32)
-      accent_image:
-        background:    rgb(32,32,32)
-        overlay:       false
+  # - scope:
+  #     path:            hyde/
+  #   values:
+  #     accent_color:    rgb(38,139,210)
+  #     theme_color:     rgb(32,32,32)
+  #     accent_image:
+  #       background:    rgb(32,32,32)
+  #       overlay:       false
 
   # Don't include documents in assets in the sitemap
   - scope:
-      path:            assets/
+      path:            assets/**
     values:
       sitemap:         false
 
   # Don't include licenses in sitemap (feel free to delete)
   - scope:
-      path:            licenses/
+      path:            licenses/**
     values:
       layout:          plain
       sitemap:         false
@@ -163,7 +171,7 @@ defaults:
         type:          WebPage
 
 kramdown:
-  math_engine:         katex
+  math_engine:         mathjax
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
@@ -190,13 +198,13 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related, random, comments]
+  post_addons:         [about, comments]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other, comments]
+  project_addons:      [about, other, comments]
 
   # Set to `true` if you don't want to show an icon indicating external links
-  no_mark_external:    false
+  no_mark_external:    true
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
   no_push_state:       false
@@ -220,7 +228,7 @@ hydejack:
 
   # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
   # This will increase site build speed!
-  no_page_style:       false
+  no_page_style:       true
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
@@ -235,7 +243,7 @@ hydejack:
   no_third_column:     false
 
   # Set to `true` if you don't like oversized headlines on large screens.
-  no_large_headings:   false
+  no_large_headings:   true
 
   # Set to `true` if you do not want to expose your resume and projects
   # in machine-readable formats.
@@ -249,11 +257,11 @@ hydejack:
   no_breadcrumbs:      false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             true
+  use_lsi:             false
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
-  cookies_banner:      false
+  cookies_banner:      true
 
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   # Note that this setting has no effect when using the free version.
@@ -270,13 +278,13 @@ hydejack:
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
     # Set to `true` to always use the dark theme.
-    always:            false
+    always:            true
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
     dynamic:           true
 
     # Set to `true` to allow visitors to switch between light and dark mode.
-    icon:              true
+    icon:              false
 
   # ⚡️ DANGER ZONE ⚡️
   # ----------------
@@ -294,7 +302,7 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /blog/:name/
+    permalink:         /:name/
     output:            true
 
   featured_tags:
@@ -339,6 +347,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
+  - jemoji
 
 
 # SEO Tag
@@ -427,3 +436,10 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+# jekyll-feed settings
+feed:
+  categories:
+    - Programming
+    - Development
+    - Study
