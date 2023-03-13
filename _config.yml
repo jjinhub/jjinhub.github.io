@@ -9,7 +9,7 @@ url:                   https://jjinhub.github.io
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               ''
+# baseurl:               '/hydejack-starter-kit'
 
 
 # General settings
@@ -27,7 +27,7 @@ timezone:              Asia/Seoul
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Let's Work Hard to Achieve Our Goals
+  Let's Work Hard to Achieve Our Goals.
   Growing Data Scientist.
 
 # A shorter description for the sidebar.
@@ -49,9 +49,7 @@ author:
   email:               khj05592002@gmail.com
   picture:             /assets/img/profile.png
   social:
-    linkedin:          
     github:            jjinhub
-    stackoverflow:     
     email:             khj05592002@gmail.com
 
 # Add links to the footer.
