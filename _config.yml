@@ -57,8 +57,8 @@ author:
 legal:
   - title:             LICENSES
     url:               /licenses/
-  - title:             COOKIES POLICY
-    url:               /cookies-policy/
+  # - title:             COOKIES POLICY
+  #   url:               /cookies-policy/
 #   - title:             NOTICE
 #     url:               /NOTICE/
 #   - title:             CHANGELOG
