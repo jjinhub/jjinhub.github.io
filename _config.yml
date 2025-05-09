@@ -58,6 +58,8 @@ menu:
   - title:             Development
     url:               /development/
     submenu: 
+      - title:         Jupyter
+        url:           /jupyter/
       - title:         Linux
         url:           /linux/
       - title:         Docker
